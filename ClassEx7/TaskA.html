@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello JavaScript!</title>
+</head>
+<body>
+  <h2>What Can JavaScript Do For Us?</h2>
+  <p id="demo">JavaScript can change HTML content</p>
+  <button type="button" onclick='document.getElementById("demo").innerHTML="Hello JavaScript!"'>Click Me!</button>
+  <hr>
+  <br>
+  <!-- TaskA part2 Start here -->
+  <p>JavaScript can change HTML attribute values.</p>
+  <p>In this case JavaScript changes the value of the src(source) attribute of an image</p>
+  <button onclick='document.getElementById("myImage").src="./pic_bulbon.gif"'>Turn on the light bulb</button>
+  <img id="myImage" src="./pic_bulboff.gif" alt="none" style="widows: 100px;">
+  <button onclick="document.getElementById('myImage').src='./pic_bulboff.gif'">Turn off the light bulb</button>
+  <hr>
+  <br>
+  <!-- TaskA part3 Start here -->
+  <p id="demo1">JavaScript can change the style of an HTML element.</p>
+  <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+  <hr>
+  <br>
+  <!-- TaskA part4 Start here -->
+  <p id="demo2">JavaScript can hide HTML elements</p>
+  <button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+  <hr>
+  <br>
+  <!-- TaskA part5 Start here -->
+  <p>JavaScript can show hidden HTML elements</p>
+  <p id="demo3" style="display: none;">JavaScript Rocks!</p>
+  <button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me!</button>
+  <hr>
+  <br>
+  <br>
+  <a href="../index.html" style="font-size: x-large;">Back to index page</a>
+</body>
+</html>

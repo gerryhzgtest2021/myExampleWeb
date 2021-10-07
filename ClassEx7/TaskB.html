@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task B</title>
+  <script>
+    function myFunction(){
+      document.getElementById("demo1").innerHTML="Paragraph written in JavaScript in Head section."
+    }
+  </script>
+</head>
+<body>
+  <h2>JavaScript in Body of HTML</h2>
+  <p id="demo"></p>
+  <script>document.getElementById("demo").innerHTML="My First JavaScript in HTML section"</script>
+  <hr>
+  <h2>JavaScript function in the Head section of HTML page</h2>
+  <p id="demo1">A simple paragraph</p>
+  <button type="button" onclick="myFunction()">Click here to call the myFunction() from Head section.</button>
+  <hr>
+  <h2>JavaScript function in the Body section of HTML page</h2>
+  <p id="demo2">A simple paragraph</p>
+  <button type="button" onclick="myFunction1()">Click here to call the myFunction1() from Body section.</button>
+  <script>
+    function myFunction1(){
+      document.getElementById("demo2").innerHTML="Paragraph written in JavaScript in Body section."
+    }
+  </script>
+  <hr>
+  <h2>External JavaScript File</h2>
+  <p id="demo3">A paragraph before the Click to change</p>
+  <button type="button" onclick="myFunction2()">Click Me and See this change!</button>
+  <p>(myFunction2() is stored in an external file call "myScript.js")</p>
+  <script src="./myScript.js"></script>
+  <hr>
+  <h2>External JavaScript File from WEB server</h2>
+  <p id="demo4">A paragraph before the Click to change</p>
+  <button type="button" onclick="myFunction3()">Click Me and See this change!</button>
+  <p>(myFunction3() is stored in an external file call "myScript.js" on web server)</p>
+  <script src="http://www.mmlab2.rlc.dcccd.edu/imed1316n03/js/myScripts.js"></script>
+  <br>
+  <a href="../index.html" style="font-size: x-large;">Back to index page</a>
+</body>
+</html>

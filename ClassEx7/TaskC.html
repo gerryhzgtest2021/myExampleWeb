@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task C</title>
+</head>
+<body>
+  <h1>Using innerHTML in exercise</h1>
+  <p id="demo"></p>  
+  <script>
+    document.getElementById("demo").innerHTML = 5+10;
+  </script>
+  <hr>
+  <h1>Using document.write() in exercise</h1>
+  <script>
+    document.write(5+6);
+  </script>
+  <hr>
+  <h1>Using document.write() after HTML is loaded will delete all existing HTML</h1>
+  <button type="button" onclick="document.write(25+6)">Try this!</button>
+  <hr>
+  <h1>Using the window.alert()</h1>
+  <script>
+    window.alert(12+2);
+  </script>
+  
+  <br>
+  <a href="../index.html" style="font-size: x-large;">Back to index page</a>
+</body>
+</html>

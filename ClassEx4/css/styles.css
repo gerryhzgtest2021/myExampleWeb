@@ -1,0 +1,10 @@
+/*this is an external CSS*/
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+  /**/
+}
